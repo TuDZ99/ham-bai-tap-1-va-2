@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function khaBanh(number) {
+        if (number > 1){
+            for (let i = 2; i <= Math.sqrt(number); i++){
+                if (number % i == 0){
+                    return false;
+                }
+            }
+            return true
+        } else {
+            return false;
+        }
+    }
+    let check = prompt(' nhap so : ');
+    document.write(khaBanh(check));
+</script>
+</body>
+</html>
